@@ -1,0 +1,57 @@
+fallback:
+  raw: "Chưa Có Danh Hiệu"
+  display: "<gray>Chưa Có Danh Hiệu</gray>"
+
+no-next:
+  raw: "Đã Đạt Danh Hiệu Tối Cao"
+  display: "<gradient:#ff4444:#ffd700>Đã Đạt Danh Hiệu Tối Cao</gradient>"
+  min-level: -1
+
+titles:
+  1-9:
+    raw: "Tân Mạo Hiểm Giả"
+    display: "<gray>Tân Mạo Hiểm Giả</gray>"
+
+  10-49:
+    raw: "Đồng Mạo Hiểm Giả"
+    display: "<#cd7f32>Đồng Mạo Hiểm Giả</#cd7f32>"
+
+  50-99:
+    raw: "Thiết Mạo Hiểm Giả"
+    display: "<#b0b0b0>Thiết Mạo Hiểm Giả</#b0b0b0>"
+
+  100-199:
+    raw: "Bạch Ngân Mạo Hiểm Giả"
+    display: "<#d9f3ff>Bạch Ngân Mạo Hiểm Giả</#d9f3ff>"
+
+  200-299:
+    raw: "Hoàng Kim Mạo Hiểm Giả"
+    display: "<#ffd700>Hoàng Kim Mạo Hiểm Giả</#ffd700>"
+
+  300-399:
+    raw: "Bạch Kim Mạo Hiểm Giả"
+    display: "<#e5e4e2>Bạch Kim Mạo Hiểm Giả</#e5e4e2>"
+
+  400-499:
+    raw: "Huyền Tinh Mạo Hiểm Giả"
+    display: "<gradient:#66ffff:#0066ff>Huyền Tinh Mạo Hiểm Giả</gradient>"
+
+  500-599:
+    raw: "Linh Mạo Hiểm Giả"
+    display: "<gradient:#aaffcc:#00ffaa>Linh Mạo Hiểm Giả</gradient>"
+
+  600-699:
+    raw: "Thánh Vực Mạo Hiểm Giả"
+    display: "<gradient:#ffdd99:#ff8844>Thánh Vực Mạo Hiểm Giả</gradient>"
+
+  700-799:
+    raw: "Truyền Kỳ Mạo Hiểm Giả"
+    display: "<gradient:#ff66ff:#9966ff>Truyền Kỳ Mạo Hiểm Giả</gradient>"
+
+  800-899:
+    raw: "Cổ Đại Mạo Hiểm Giả"
+    display: "<gradient:#aa88ff:#331166>Cổ Đại Mạo Hiểm Giả</gradient>"
+
+  900-2000:
+    raw: "Thần Thoại Mạo Hiểm Giả"
+    display: "<gradient:#ff4444:#ffd700>Thần Thoại Mạo Hiểm Giả</gradient>"
