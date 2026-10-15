@@ -1,0 +1,9 @@
+# Runtime data from a live Minecraft server — keep out of this docs/binary repository
+plugins/NovusAdventureLevel/data/players/
+plugins/NovusAdventureLevel/bicanh/
+plugins/NovusAdventureLevel/*.log
+logs/
+crash-reports/
+*.log
+.DS_Store
+Thumbs.db
