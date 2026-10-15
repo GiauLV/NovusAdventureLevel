@@ -1,0 +1,1 @@
+a369875d8d6ad458d1939a303a06603718a2fa342736f754a208b8faa6be9e5a  artifacts/NovusAdventureLevel-1.1.1.jar
