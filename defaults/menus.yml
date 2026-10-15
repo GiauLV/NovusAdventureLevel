@@ -1,0 +1,383 @@
+main-menu:
+  title: "<gradient:#00ffaa:#00aaff>Cấp Mạo Hiểm</gradient>"
+  size: 54
+  filler:
+    enabled: true
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+    lore: []
+
+  items:
+    profile:
+      slot: 10
+      material: PLAYER_HEAD
+      name: "<gradient:#00ffaa:#00aaff>{player}</gradient>"
+      lore:
+        - "<gray>Danh hiệu:</gray> {title}"
+        - "<gray>Cấp Mạo Hiểm:</gray> <aqua>{level}</aqua><dark_gray>/</dark_gray><blue>{max_level}</blue>"
+        - "<gray>Điểm Thám Hiểm:</gray> <yellow>{exp}</yellow><dark_gray>/</dark_gray><gold>{required_exp}</gold>"
+        - "<gray>Tiến trình:</gray> <green>{progress_percent}%</green>"
+        - "{progress_bar}"
+
+    level:
+      slot: 12
+      material: EXPERIENCE_BOTTLE
+      name: "<aqua>⚔ Cấp Mạo Hiểm</aqua>"
+      lore:
+        - "<gray>AL hiện tại:</gray> <aqua>{level}</aqua>"
+        - "<gray>Cấp tối đa:</gray> <blue>{max_level}</blue>"
+        - "<gray>Danh hiệu:</gray> {title}"
+
+    exp:
+      slot: 14
+      material: AMETHYST_SHARD
+      name: "<yellow>✦ Điểm Thám Hiểm</yellow>"
+      lore:
+        - "<gray>AE hiện tại:</gray> <yellow>{exp}</yellow>"
+        - "<gray>AE cần:</gray> <gold>{required_exp}</gold>"
+        - "<gray>Còn thiếu:</gray> <red>{remaining_exp}</red>"
+        - "<gray>Tổng AE đã nhận:</gray> <green>{total_exp}</green>"
+        - ""
+        - "{progress_bar}"
+
+    title:
+      slot: 16
+      material: NETHER_STAR
+      name: "<gold>🏅 Danh Hiệu Mạo Hiểm</gold>"
+      lore:
+        - "<gray>Hiện tại:</gray> {title}"
+        - "<gray>Tên thô:</gray> <white>{title_raw}</white>"
+        - "<gray>Danh hiệu kế tiếp:</gray> {next_title}"
+        - "<gray>Mở khóa tại:</gray> <aqua>AL {next_title_min_level}</aqua>"
+
+    unlocked-stats:
+      slot: 28
+      material: LIME_DYE
+      name: "<green>✔ Chỉ Số Đã Mở Khóa</green>"
+      lore:
+        - "<gray>Nhấn để xem các chỉ số bạn đã mở khóa.</gray>"
+      action: "open_unlocked_stats"
+
+    locked-stats:
+      slot: 30
+      material: GRAY_DYE
+      name: "<red>✖ Chỉ Số Chưa Mở Khóa</red>"
+      lore:
+        - "<gray>Nhấn để xem các chỉ số sẽ mở khóa ở cấp cao hơn.</gray>"
+      action: "open_locked_stats"
+
+    current-stats:
+      slot: 32
+      material: DIAMOND_SWORD
+      name: "<aqua>⚔ Chỉ Số Đang Được Cộng</aqua>"
+      lore:
+        - "<gray>Nhấn để xem tổng chỉ số hiện tại từ Cấp Mạo Hiểm.</gray>"
+      action: "open_current_stats"
+
+    leaderboard:
+      slot: 34
+      material: GOLD_INGOT
+      name: "<gold>🏆 Bảng Xếp Hạng</gold>"
+      lore:
+        - "<gray>Hạng hiện tại:</gray> <yellow>#{rank}</yellow>"
+        - "<gray>Nhấn để xem top Cấp Mạo Hiểm.</gray>"
+      action: "open_top"
+
+    close:
+      slot: 49
+      material: BARRIER
+      name: "<red>Đóng</red>"
+      lore: []
+      action: "close"
+
+stat-items:
+  max-health:
+    slot: 10
+    material: RED_DYE
+    display-name: "Máu Tối Đa"
+  attack-damage:
+    slot: 11
+    material: IRON_SWORD
+    display-name: "Sát Thương Cơ Bản"
+  defense:
+    slot: 12
+    material: SHIELD
+    display-name: "Phòng Thủ"
+  damage-reduction:
+    slot: 13
+    material: IRON_CHESTPLATE
+    display-name: "Giảm Sát Thương"
+  critical-strike-chance:
+    slot: 14
+    material: RABBIT_FOOT
+    display-name: "Tỷ Lệ Chí Mạng"
+  critical-strike-power:
+    slot: 15
+    material: NETHERITE_AXE
+    display-name: "Sức Mạnh Chí Mạng"
+  skill-damage:
+    slot: 16
+    material: ENCHANTED_BOOK
+    display-name: "Sát Thương Kỹ Năng"
+  movement-speed:
+    slot: 19
+    material: SUGAR
+    display-name: "Tốc Độ Di Chuyển"
+  attack-speed:
+    slot: 20
+    material: CLOCK
+    display-name: "Tốc Đánh"
+  life-steal:
+    slot: 21
+    material: FERMENTED_SPIDER_EYE
+    display-name: "Hút Máu"
+  max-stamina:
+    slot: 22
+    material: RABBIT_FOOT
+    display-name: "Thể Lực Tối Đa"
+  max-mana:
+    slot: 23
+    material: LAPIS_LAZULI
+    display-name: "Mana Tối Đa"
+
+stats-menu:
+  title: "<gradient:#00ffaa:#00aaff>Chỉ Số Cấp Mạo Hiểm</gradient>"
+  size: 54
+  filler:
+    enabled: true
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+    lore: []
+  item:
+    unlocked-name: "<green>✔ {stat_name}</green>"
+    locked-name: "<red>✖ {stat_name} *</red>"
+    unlocked-lore:
+      - "<gray>Trạng thái:</gray> <green>Đã mở khóa</green>"
+      - "<gray>Tích hợp:</gray> <white>{availability}</white>"
+      - "<gray>Đang cộng:</gray> <aqua>+{value}</aqua>"
+      - "<gray>Mở khóa từ:</gray> <yellow>AL {unlock_level}</yellow>"
+      - "<gray>Giới hạn tối đa:</gray> <gold>{cap}</gold>"
+    locked-lore:
+      - "<gray>Trạng thái:</gray> <red>Chưa mở khóa</red>"
+      - "<gray>Tích hợp:</gray> <white>{availability}</white>"
+      - "<gray>Mở khóa tại:</gray> <yellow>AL {unlock_level}</yellow>"
+      - "<gray>Còn thiếu:</gray> <red>{levels_remaining} cấp</red>"
+      - ""
+      - "<red>* Chỉ số này chưa được mở khóa.</red>"
+  integration-warning:
+    enabled: true
+    slot: 40
+    material: YELLOW_DYE
+    name: "<yellow>MythicLib chưa hoạt động</yellow>"
+    lore:
+      - "<gray>Giá trị bên trên được tính từ stats.yml.</gray>"
+      - "<gray>Chỉ số chỉ được áp vào nhân vật khi có MythicLib.</gray>"
+  back:
+    slot: 49
+    material: ARROW
+    name: "<yellow>Quay lại</yellow>"
+    lore: []
+    action: "open_main"
+
+unlocked-stats-menu:
+  title: "<green>Chỉ Số Đã Mở Khóa</green>"
+  size: 54
+  filler:
+    enabled: true
+    material: GREEN_STAINED_GLASS_PANE
+    name: " "
+    lore: []
+  item:
+    name: "<green>✔ {stat_name}</green>"
+    lore:
+      - "<gray>Trạng thái:</gray> <green>Đã mở khóa</green>"
+      - "<gray>Tích hợp:</gray> <white>{availability}</white>"
+      - "<gray>Đang cộng:</gray> <aqua>+{value}</aqua>"
+      - "<gray>Mở khóa từ:</gray> <yellow>AL {unlock_level}</yellow>"
+      - "<gray>Giới hạn:</gray> <gold>{cap}</gold>"
+  empty:
+    slot: 22
+    material: PAPER
+    name: "<yellow>Chưa có chỉ số nào được mở khóa.</yellow>"
+    lore: []
+  back:
+    slot: 49
+    material: ARROW
+    name: "<yellow>Quay lại</yellow>"
+    lore: []
+    action: "open_main"
+
+locked-stats-menu:
+  title: "<red>Chỉ Số Chưa Mở Khóa</red>"
+  size: 54
+  filler:
+    enabled: true
+    material: RED_STAINED_GLASS_PANE
+    name: " "
+    lore: []
+  item:
+    name: "<red>✖ {stat_name} *</red>"
+    lore:
+      - "<gray>Trạng thái:</gray> <red>Chưa mở khóa</red>"
+      - "<gray>Tích hợp:</gray> <white>{availability}</white>"
+      - "<gray>Mở khóa tại:</gray> <yellow>AL {unlock_level}</yellow>"
+      - "<gray>Còn thiếu:</gray> <red>{levels_remaining} cấp</red>"
+      - ""
+      - "<red>* Hãy tiếp tục tăng Cấp Mạo Hiểm để mở khóa.</red>"
+  empty:
+    slot: 22
+    material: LIME_DYE
+    name: "<green>Bạn đã mở khóa tất cả chỉ số.</green>"
+    lore: []
+  back:
+    slot: 49
+    material: ARROW
+    name: "<yellow>Quay lại</yellow>"
+    lore: []
+    action: "open_main"
+
+top-menu:
+  title: "<gradient:#ffd700:#ff8800>Bảng Xếp Hạng Cấp Mạo Hiểm</gradient>"
+  size: 54
+  max-entries: 10
+  entries-per-page: 10
+  entry-slots:
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 28
+    - 29
+    - 30
+    - 31
+    - 32
+    - 33
+    - 34
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 17
+    - 18
+    - 26
+    - 27
+    - 35
+    - 36
+    - 44
+  filler:
+    enabled: true
+    material: ORANGE_STAINED_GLASS_PANE
+    name: " "
+    lore: []
+  top-entry:
+    material: PLAYER_HEAD
+    name: "<gold>#{rank}</gold> <yellow>{player}</yellow>"
+    lore:
+      - "<gray>Danh hiệu:</gray> {title}"
+      - "<gray>AL:</gray> <aqua>{level}</aqua>"
+      - "<gray>AE:</gray> <yellow>{exp}</yellow><dark_gray>/</dark_gray><gold>{required_exp}</gold>"
+      - "<gray>Tổng AE:</gray> <green>{total_exp}</green>"
+  loading:
+    slot: 22
+    material: CLOCK
+    name: "<yellow>Đang tải bảng xếp hạng...</yellow>"
+    lore: []
+  empty:
+    slot: 22
+    material: PAPER
+    name: "<yellow>Chưa có dữ liệu xếp hạng.</yellow>"
+    lore: []
+  previous-page:
+    slot: 45
+    material: ARROW
+    name: "<yellow>Trang trước</yellow>"
+    lore:
+      - "<gray>Trang {previous_page}</gray>"
+    action: "top_previous_page"
+  back:
+    slot: 49
+    material: OAK_DOOR
+    name: "<yellow>Quay lại</yellow>"
+    lore: []
+    action: "open_main"
+  next-page:
+    slot: 53
+    material: ARROW
+    name: "<yellow>Trang sau</yellow>"
+    lore:
+      - "<gray>Trang {next_page}</gray>"
+    action: "top_next_page"
+
+bicanh-player-menu:
+  title: "<gradient:#FFD36A:#FF7849>Bí Cảnh Đột Phá</gradient>"
+  status:
+    no-gate: "KHÔNG CÓ BÍ CẢNH"
+    not-ready: "CHƯA HOÀN THIỆN"
+    running: "ĐANG TRONG BÍ CẢNH"
+    arena-in-use: "BÍ CẢNH ĐANG ĐƯỢC SỬ DỤNG"
+    completed: "ĐÃ HOÀN THÀNH"
+    ready: "SẴN SÀNG"
+    need-exp: "CHƯA ĐỦ AE"
+  info:
+    name: "<gold>✦ {bicanh}</gold>"
+    lore:
+      - "<gray>ID:</gray> <white>{id}</white>"
+      - "<gray>Đột phá:</gray> <aqua>AL {level} → {next_level}</aqua>"
+      - "<gray>AE:</gray> <yellow>{exp}</yellow><gray>/</gray><gold>{required_exp}</gold>"
+      - "<gray>Trạng thái:</gray> <white>{status}</white>"
+      - ""
+      - "<gray>Thử thách:</gray> <white>{waves} wave × {mobs_per_wave} mob</white>"
+      - "<gray>Thời gian:</gray> <white>{minutes} phút</white>"
+      - "<gray>MythicMob:</gray> <white>{mobs}</white>"
+      - "<gray>Hình phạt:</gray> <red>{punishment}</red>"
+  start:
+    name: "<green><bold>Bắt đầu Bí Cảnh</bold></green>"
+    lore:
+      - "<gray>Trạng thái:</gray> <white>{status}</white>"
+      - "<gray>Yêu cầu:</gray> <yellow>AL {level}, đủ {required_exp} AE</yellow>"
+      - ""
+      - "<yellow>Nhấn để vào Bí Cảnh.</yellow>"
+
+bicanh-admin-menu:
+  title: "<gradient:#FFD700:#FF6B35>Quản trị Bí Cảnh</gradient> <gray>• {page}/{max_page}</gray>"
+  entry:
+    name: "<gold>{name}</gold> <dark_gray>({id})</dark_gray>"
+    lore:
+      - "<gray>Enabled:</gray> <white>{enabled}</white>"
+      - "<gray>Trạng thái:</gray> <white>{status}</white>"
+      - "<gray>Cổng:</gray> <aqua>AL {gate} → {next_level}</aqua> <gray>({type})</gray>"
+      - "<gray>Tất cả cổng ({gate_count}):</gray> <white>{gate_list}</white>"
+      - "<gray>Wave:</gray> <white>{waves} × {mobs_per_wave}</white>"
+      - "<gray>Thời gian:</gray> <white>{minutes} phút</white>"
+      - "<gray>Điểm vào:</gray> <white>{spawn}</white>"
+      - "<gray>Điểm mob:</gray> <white>{points}/10</white>"
+      - "<gray>MythicMobs:</gray> <white>{mythic_status}</white>"
+      - "<gray>Mob:</gray> <white>{mobs}</white>"
+      - "<gray>Hình phạt:</gray> <red>{punishment}</red>"
+      - ""
+      - "<yellow>Chuột trái:</yellow> dịch chuyển tới điểm vào"
+      - "<aqua>Chuột phải:</aqua> xem chi tiết và các điểm"
+      - "<light_purple>Shift + trái:</light_purple> chạy TEST"
