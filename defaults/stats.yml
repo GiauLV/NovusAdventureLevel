@@ -1,0 +1,239 @@
+stats:
+  enabled: true
+  modifier-key-prefix: "novus_adventure_level"
+
+  stat-definitions:
+    max-health:
+      enabled: true
+      mythiclib-id: "MAX_HEALTH"
+      display-name: "Máu Tối Đa"
+      icon: RED_DYE
+      cap: 900.0
+
+    max-stamina:
+      enabled: true
+      mythiclib-id: "MAX_STAMINA"
+      display-name: "Thể Lực Tối Đa"
+      cap: 100.0
+      icon: RABBIT_FOOT
+
+    max-mana:
+      enabled: true
+      mythiclib-id: "MAX_MANA"
+      display-name: "Mana Tối Đa"
+      cap: 150.0
+      icon: LAPIS_LAZULI
+
+    attack-damage:
+      enabled: true
+      mythiclib-id: "ATTACK_DAMAGE"
+      cap: 120.0
+
+    defense:
+      enabled: true
+      mythiclib-id: "DEFENSE"
+      cap: 120.0
+
+    damage-reduction:
+      enabled: true
+      mythiclib-id: "DAMAGE_REDUCTION"
+      cap: 10.0
+
+    critical-strike-chance:
+      enabled: true
+      mythiclib-id: "CRITICAL_STRIKE_CHANCE"
+      cap: 10.0
+
+    critical-strike-power:
+      enabled: true
+      mythiclib-id: "CRITICAL_STRIKE_POWER"
+      cap: 160.0
+
+    skill-damage:
+      enabled: true
+      mythiclib-id: "SKILL_DAMAGE"
+      cap: 70.0
+
+    movement-speed:
+      enabled: true
+      mythiclib-id: "MOVEMENT_SPEED"
+      cap: 0.75
+
+    attack-speed:
+      enabled: true
+      mythiclib-id: "ATTACK_SPEED"
+      cap: 0.60
+
+    life-steal:
+      enabled: true
+      mythiclib-id: "LIFE_STEAL"
+      cap: 5.0
+
+  tiers:
+    1-9:
+      max-health: 0.50
+      max-stamina: 0.05
+      max-mana: 0
+      attack-damage: 0
+      defense: 0
+      damage-reduction: 0
+      critical-strike-chance: 0
+      critical-strike-power: 0
+      skill-damage: 0
+      movement-speed: 0
+      attack-speed: 0
+      life-steal: 0
+
+    10-49:
+      max-health: 0.67
+      max-stamina: 0.06
+      max-mana: 0
+      attack-damage: 0.015
+      defense: 0
+      damage-reduction: 0
+      critical-strike-chance: 0
+      critical-strike-power: 0
+      skill-damage: 0
+      movement-speed: 0
+      attack-speed: 0
+      life-steal: 0
+
+    50-99:
+      max-health: 0.70
+      max-stamina: 0.07
+      max-mana: 0.03
+      attack-damage: 0.020
+      defense: 0.015
+      damage-reduction: 0
+      critical-strike-chance: 0
+      critical-strike-power: 0
+      skill-damage: 0
+      movement-speed: 0
+      attack-speed: 0
+      life-steal: 0
+
+    100-199:
+      max-health: 0.75
+      max-stamina: 0.08
+      max-mana: 0.04
+      attack-damage: 0.025
+      defense: 0.020
+      damage-reduction: 0.001
+      critical-strike-chance: 0
+      critical-strike-power: 0
+      skill-damage: 0
+      movement-speed: 0
+      attack-speed: 0
+      life-steal: 0
+
+    200-299:
+      max-health: 0.80
+      max-stamina: 0.09
+      max-mana: 0.05
+      attack-damage: 0.030
+      defense: 0.025
+      damage-reduction: 0.0012
+      critical-strike-chance: 0.001
+      critical-strike-power: 0
+      skill-damage: 0
+      movement-speed: 0
+      attack-speed: 0
+      life-steal: 0
+
+    300-399:
+      max-health: 0.85
+      max-stamina: 0.10
+      max-mana: 0.06
+      attack-damage: 0.035
+      defense: 0.030
+      damage-reduction: 0.0014
+      critical-strike-chance: 0.0012
+      critical-strike-power: 0.030
+      skill-damage: 0
+      movement-speed: 0
+      attack-speed: 0
+      life-steal: 0
+
+    400-499:
+      max-health: 0.90
+      max-stamina: 0.11
+      max-mana: 0.07
+      attack-damage: 0.040
+      defense: 0.035
+      damage-reduction: 0.0016
+      critical-strike-chance: 0.0014
+      critical-strike-power: 0.035
+      skill-damage: 0
+      movement-speed: 0.00008
+      attack-speed: 0
+      life-steal: 0
+
+    500-599:
+      max-health: 0.95
+      max-stamina: 0.12
+      max-mana: 0.08
+      attack-damage: 0.045
+      defense: 0.040
+      damage-reduction: 0.0018
+      critical-strike-chance: 0.0016
+      critical-strike-power: 0.040
+      skill-damage: 0
+      movement-speed: 0.00010
+      attack-speed: 0.00008
+      life-steal: 0
+
+    600-699:
+      max-health: 1.00
+      max-stamina: 0.13
+      max-mana: 0.09
+      attack-damage: 0.050
+      defense: 0.045
+      damage-reduction: 0.0020
+      critical-strike-chance: 0.0018
+      critical-strike-power: 0.045
+      skill-damage: 0
+      movement-speed: 0.00012
+      attack-speed: 0.00010
+      life-steal: 0.0008
+
+    700-799:
+      max-health: 1.05
+      max-stamina: 0.14
+      max-mana: 0.10
+      attack-damage: 0.055
+      defense: 0.050
+      damage-reduction: 0.0022
+      critical-strike-chance: 0.0020
+      critical-strike-power: 0.050
+      skill-damage: 0.020
+      movement-speed: 0.00014
+      attack-speed: 0.00012
+      life-steal: 0.0010
+
+    800-899:
+      max-health: 1.10
+      max-stamina: 0.15
+      max-mana: 0.11
+      attack-damage: 0.060
+      defense: 0.055
+      damage-reduction: 0.0024
+      critical-strike-chance: 0.0022
+      critical-strike-power: 0.055
+      skill-damage: 0.025
+      movement-speed: 0.00016
+      attack-speed: 0.00014
+      life-steal: 0.0012
+
+    900-2000:
+      max-health: 1.20
+      max-stamina: 0.17
+      max-mana: 0.13
+      attack-damage: 0.070
+      defense: 0.065
+      damage-reduction: 0.0028
+      critical-strike-chance: 0.0025
+      critical-strike-power: 0.065
+      skill-damage: 0.030
+      movement-speed: 0.00020
+      attack-speed: 0.00016
+      life-steal: 0.0015
