@@ -1,0 +1,104 @@
+settings:
+  max-level: 2000
+  start-level: 1
+  start-exp: 0
+  clear-exp-at-max-level: true
+  allow-level-down-when-taking-exp: false
+  auto-save-minutes: 5
+
+exp-formula:
+  base: 60
+  linear: 18
+  quadratic: 3.0
+
+format:
+  number-decimals: 2
+  use-thousands-separator: true
+
+amount-parser:
+  suffixes:
+    k: 1000
+    m: 1000000
+    b: 1000000000
+  allow-decimal-suffix: true
+  decimal-rounding: DOWN
+  allow-thousands-separator: true
+  swap-reversed-range: true
+  max-give-per-command: 1000000000000
+
+leaderboard:
+  entries: 10
+  cache-seconds: 60
+  max-entries: 100
+
+placeholder:
+  progress-bar:
+    length: 20
+    filled: "■"
+    empty: "□"
+    filled-color: "<#00ffaa>"
+    empty-color: "<dark_gray>"
+
+bossbar:
+  level-up:
+    enabled: true
+    duration-seconds: 5
+    color: YELLOW
+    overlay: PROGRESS
+    message: "<gradient:#ffd86b:#ff7b00>Chúc mừng! Bạn đã đạt Cấp Mạo Hiểm {level}</gradient>"
+
+milestone:
+  enabled: true
+  every-level: 10
+  broadcast-chat: true
+  broadcast-bossbar: true
+  bossbar-duration-seconds: 7
+  bossbar-color: PURPLE
+  bossbar-overlay: PROGRESS
+  bossbar-message: "<gradient:#00ffcc:#00aaff>{player}</gradient> <white>đã đạt</white> <gold>Cấp Mạo Hiểm {level}</gold> <gray>({title_raw})</gray>"
+  chat-message:
+    - ""
+    - "<gold>✦</gold> <yellow>{player}</yellow> <white>đã đạt</white> <aqua>Cấp Mạo Hiểm {level}</aqua> <gray>({title_raw})</gray><white>!</white>"
+    - ""
+
+bicanh:
+  # false: người chơi vẫn giữ dấu đã hoàn thành nếu từng bị hạ cấp.
+  require-repeat-after-level-loss: false
+
+  npc:
+    name: "Sứ Giả Bí Cảnh"
+
+  bossbar:
+    enabled: true
+    waiting:
+      title: "<gold>✦ Đã đủ AE!</gold> <white>Hãy gặp {npc} để đột phá AL {level} → {next_level}</white>"
+      color: YELLOW
+      overlay: PROGRESS
+
+  session:
+    wave-delay-seconds: 2
+    bossbar:
+      title: "<gradient:#FFD36A:#FF7849>{bicanh}</gradient> <gray>• Wave {wave}/{max_wave} • {time_left}s</gray>"
+
+  return:
+    # Để trống: dùng spawn của world chính. Có thể nhập tên world spawn của server.
+    world: ""
+
+  command-block:
+    enabled: true
+    whitelist: []
+
+  test:
+    # Cho phép admin test một file có enabled: false. Các lỗi spawn/điểm/mob vẫn bị chặn.
+    allow-disabled: false
+
+  completion:
+    broadcast-chat: true
+    bossbar:
+      enabled: true
+      audience: ALL
+      duration-seconds: 8
+      title: "<gold>✦ {player} đã hoàn thành {bicanh}, đột phá AL {level} → {next_level}! ✦</gold>"
+
+  failure:
+    broadcast-chat: true
