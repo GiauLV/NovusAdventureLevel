@@ -1,0 +1,104 @@
+settings:
+  enabled: true
+  prevent-duplicate-rewards: true
+  priority:
+    - MYTHICMOBS_DROP
+    - MYTHICMOBS_INTERNAL_ID
+    - LEVELLEDMOBS
+    - ENTITY_TYPE
+    - DEFAULT
+
+recipients:
+  direct-player-kill: true
+  projectile-owner: true
+  tamed-entity-owner: false
+  environmental-kill: false
+
+mythicmobs:
+  enabled: true
+  drop-identifiers:
+    - "ae"
+    - "adventureexp"
+
+  fallback-rewards:
+    enabled: false
+    mobs:
+      ZombieB:
+        ae: 8
+      LinhThaoThu:
+        ae: "3-6"
+
+levelledmobs:
+  enabled: true
+
+  entity-rewards:
+    ZOMBIE:
+      levels:
+        1: 3
+        2: 4
+        3: 5
+        4: 6
+        5: 7
+        6: 8
+        7: 9
+        8: 10
+        9: 11
+        10: 12
+        11: 13
+        12: 14
+        13: 15
+        14: 16
+        15: 18
+      default:
+        mode: PER_LEVEL
+        base-ae: 2
+        ae-per-level: 1
+        rounding: FLOOR
+
+    SKELETON:
+      levels:
+        1: 4
+        2: 5
+        3: 6
+        4: 7
+        5: 8
+        6: 9
+        7: 10
+        8: 11
+        9: 12
+        10: 14
+        11: 16
+        12: 18
+        13: 20
+        14: 22
+        15: 25
+
+  global-default:
+    mode: LEVEL_RANGES
+    minimum-ae: 1
+    maximum-ae: 500
+    level-ranges:
+      "1-10": 2
+      "11-25": 5
+      "26-50": 10
+      "51-100": 20
+      "101-250": 35
+      "251-500": 60
+      "501-1000": 100
+
+# Tùy chọn cho mob thường không do MythicMobs/LevelledMobs quản lý.
+# entity-type-rewards:
+#   CREEPER:
+#     default:
+#       mode: FIXED
+#       amount: 2
+
+# Reward cuối cùng nếu không có nguồn nào phía trên khớp.
+# default-reward:
+#   mode: FIXED
+#   amount: 1
+
+notifications:
+  ae-gain-message: false
+  level-up-bossbar: true
+  milestone-broadcast: true
