@@ -8,16 +8,16 @@ Plugin Minecraft cung cấp hệ thống Adventure Level (AL), Điểm Thám Hi�
 
 ## Trạng thái phát hành
 
-Tài liệu và các file cấu hình mặc định đã được đưa vào repository. **JAR chưa được đính kèm trên GitHub** vì kết nối xuất bản hiện tại không hỗ trợ tải lên binary Release asset. Không có Release tải xuống nào được tạo ở thời điểm này.
+Tài liệu và các file cấu hình mặc định đã được đưa vào repository. **JAR chưa được đính kèm trên GitHub** vì kết nối xuất bản hiện tại không hỗ trợ tải lên binary Release asset. Hiện chưa có Release tải xuống.
 
-File JAR gốc trong gói làm việc có tên `NovusAdventureLevel-1.1.1.jar`. Để hoàn tất phát hành công khai, hãy đính kèm file này trong **Releases** và xác minh asset sau khi tải lên.
+File JAR gốc có tên `NovusAdventureLevel-1.1.1.jar`. Để hoàn tất phát hành công khai, hãy đính kèm file này trong [Releases](https://github.com/GiauLV/NovusAdventureLevel/releases) và xác minh asset sau khi tải lên.
 
 ## Cài đặt
 
 Sau khi JAR được đính kèm vào Release:
 
 1. Dừng máy chủ Minecraft.
-2. Tải `NovusAdventureLevel-1.1.1.jar` từ trang [Releases](../../releases).
+2. Tải `NovusAdventureLevel-1.1.1.jar` từ [Releases](https://github.com/GiauLV/NovusAdventureLevel/releases).
 3. Đặt JAR vào thư mục `plugins/`.
 4. Khởi động máy chủ và kiểm tra console.
 5. Sao lưu cấu hình trước khi thay đổi các file do plugin tạo ra.
