@@ -1,0 +1,41 @@
+id: "__ID__"
+
+ten: "<gradient:#FFD36A:#FF7849>Bí Cảnh Đột Phá</gradient>"
+
+enabled: true
+
+he-thong-cap-do:
+  enabled: true
+
+# Đơn vị: phút.
+thoigian-hoanthanh: 5
+
+trung-phat:
+  enabled: true
+  tru-cap-mao-hiem: 1
+  min-level: 1
+
+# Điểm người chơi được đưa vào khi bắt đầu. Chưa được admin thiết lập.
+spawn: null
+
+# Tối đa 10 điểm spawn quái. NULL là chưa thiết lập.
+diem-spawn-quai:
+  diem1: null
+  diem2: null
+  diem3: null
+  diem4: null
+  diem5: null
+  diem6: null
+  diem7: null
+  diem8: null
+  diem9: null
+  diem10: null
+
+capdobicanh:
+  id1:
+    cap-do-vao-bi-canh: __GATE_LEVEL__
+    loai: NORMAL
+    manquai: 1
+    soquaimoiman: 10
+    quai-duoc-chon:
+      - "MYTHICMOB:example_mob"
